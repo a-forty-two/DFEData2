@@ -1,0 +1,13 @@
+app = Flask('__name__')
+
+@app.route('/')
+def blahblah():
+    return "<p>Hello<br/>World<br/> bye bye!</p>"
+
+@app.route('/blah/<x>/<y>')
+def woohoo(x,y):
+    return str(sum(x,y))
+def sum(a,b):
+    return int(a)+int(b)
+
+app.run(host="0.0.0.0")
