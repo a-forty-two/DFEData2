@@ -3,7 +3,7 @@ from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient, _
 
 try:
     print("Azure Blob Storage v" + __version__ + " - Python quickstart sample")
-    connect_str = '<enter azure storage account key>'
+    connect_str = '<enter azure storage account connection string>'
 
     # Create the BlobServiceClient object which will be used to create a container client
     blob_service_client = BlobServiceClient.from_connection_string(connect_str)
