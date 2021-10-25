@@ -18,4 +18,3 @@ try:
 except Exception as ex:
     print('Exception:')
     print(ex)
-                                                                                  21,4          Bot
