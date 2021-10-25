@@ -3,7 +3,7 @@ from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient, _
 
 try:
     print("Azure Blob Storage v" + __version__ + " - Python quickstart sample")
-    connect_str = 'DefaultEndpointsProtocol=https;AccountName=otteropotamus;AccountKey=jdcun1cDS7Dva2pzzl8AVm2ko4IJLzUj1dWLGhTeygvCa/PRz0l68aWORHeA7giJMiICi1JofFeEZV8kxeaiIQ==;EndpointSuffix=core.windows.net'
+    connect_str = '<enter azure storage account key>'
 
     # Create the BlobServiceClient object which will be used to create a container client
     blob_service_client = BlobServiceClient.from_connection_string(connect_str)
